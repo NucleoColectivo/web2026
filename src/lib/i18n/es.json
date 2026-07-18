@@ -1,0 +1,442 @@
+
+{
+  "lang": "es",
+  "header": {
+    "home": "Home",
+    "manifesto": "Manifiesto",
+    "labs": "Laboratorios",
+    "community": "Comunidad",
+    "showcase": "Vitrina",
+    "radio": "Radio",
+    "channel": "Channel",
+    "challenges": "Retos",
+    "solutions": "Soluciones_",
+    "contact": "Contacto"
+  },
+  "hero_animated_text": {
+    "slide1": {
+      "line1": "ARTE",
+      "line2": "CULTURA",
+      "line3": "TECNOLOGÍA"
+    },
+    "slide2": "IMAGINAMOS <span class='text-primary'>FUTUROS</span>",
+    "slide3": "DISEÑO <span class='text-accent'>GENERATIVO</span>",
+    "slide4": "NÚCLEO_COLECTIVO",
+    "slide5": "TRANSFORMACIÓN <span class='text-primary'>SOCIAL</span>",
+    "slide6": "IA <span class='text-accent'>COLABORATIVA</span>",
+    "slide7": "ARCHIVO_VIVO",
+    "slide8": "ARTE <span class='text-primary'>INTERACTIVO</span>",
+    "slide9": "CREACIÓN CONTEMPORÁNEA"
+  },
+  "home": {
+    "est_date": "EST_2026",
+    "platform_system": "PLATAFORMA_DE_SISTEMAS_ARTÍSTICOS",
+    "featured": "OBRAS DESTACADAS",
+    "showcase_intro": "Una selección de procesos e investigaciones del archivo vivo."
+  },
+  "home_v2": {
+    "hero": {
+      "description": "LABORATORIO DE CREACIÓN, ARCHIVO VIVO Y VITRINA DIGITAL PARA EL ARTE DEL MAÑANA.",
+      "cta_primary": "Explorar Vitrina",
+      "cta_secondary": "Conocer la Red"
+    },
+    "what_to_do": {
+      "title": "ACTIVACIONES",
+      "subtitle": "¿Qué puedes hacer en el Núcleo?",
+      "item1_title": "Laboratorios",
+      "item1_desc": "Espacios de experimentación técnica y conceptual con herramientas de vanguardia.",
+      "item2_title": "Archivo",
+      "item2_desc": "Memoria viva de procesos artísticos y tecnológicos desarrollados por el colectivo.",
+      "item3_title": "Comunidad",
+      "item3_desc": "Una red expandida de nodos creativos que habitan el cruce arte-tecnología.",
+      "item4_title": "Retos IA",
+      "item4_desc": "Máquina creativa para activar misiones de innovación y pensamiento disruptivo."
+    },
+    "who_is_it_for": {
+      "title": "PARA QUIÉN",
+      "subtitle": "Conectamos diversos nodos del ecosistema",
+      "p1": "Articulamos diálogos entre la academia, la industria y el territorio para generar impacto real.",
+      "item1_title": "Artistas y Creadores",
+      "item1_desc": "Que buscan expandir su práctica mediante el código, la IA y los nuevos medios.",
+      "item2_title": "Instituciones y Marcas",
+      "item2_desc": "Que requieren soluciones creativas disruptivas y experiencias inmersivas.",
+      "item3_title": "Comunidad Global",
+      "item3_desc": "Cualquier persona interesada en el futuro de la cultura y la tecnología."
+    },
+    "featured_cta": "VER TODO EL ARCHIVO",
+    "community_cta": {
+      "title": "EL NÚCLEO SE EXPANDE",
+      "subtitle": "Convocatoria Abierta",
+      "desc": "ESTAMOS BUSCANDO NUEVOS NODOS PARA INVENTAR EL FUTURO.",
+      "cta": "POSTULARME AHORA"
+    }
+  },
+  "projects_data": {
+    "criaturas-imposibles": {
+      "title": "Criaturas Imposibles",
+      "summary": "Un experimento visual que utiliza la IA para crear nuevas realidades, explorando el concepto de falso documental."
+    },
+    "gravedad_sonora": {
+      "title": "Gravedad Sonora",
+      "summary": "Investigación sobre la relación entre el peso de los objetos digitales y su resonancia acústica."
+    },
+    "vj_system": {
+      "title": "Malla Sónica",
+      "summary": "Sistema de visualización audioreactiva basado en mallas gravitacionales dinámicas."
+    },
+    "instrumento_gestual": {
+      "title": "Instrumento Gestual",
+      "summary": "Interfaz inmersiva que traduce el movimiento del cuerpo en texturas sonoras mediante visión artificial."
+    },
+    "nucleo-bots-ai": {
+      "title": "Núcleo Bots IA",
+      "summary": "Agentes conversacionales especializados en mediación cultural y pensamiento crítico."
+    },
+    "kinefonia": {
+      "title": "Kinefonia",
+      "summary": "Estudio de arte generativo que explora la sinestesia entre el movimiento y la armonía."
+    },
+    "fluir-micro-sesiones": {
+      "title": "Fluir: Micro Sesiones",
+      "summary": "Exploración audiovisual de la percepción en contextos de confinamiento."
+    },
+    "fluir-micro-proceso": {
+      "title": "Fluir: Documental de Proceso",
+      "summary": "Registro detallado de la metodología de creación del proyecto Fluir."
+    }
+  },
+  "special_projects": {
+    "cosiaca": {
+      "title": "Cosiaca 350",
+      "description": "Narrativa transmedia sobre el personaje icónico de Antioquia, integrando IA y archivos históricos.",
+      "social": {
+        "youtube": {
+          "main_channel": "Canal Principal",
+          "historical_playlist": "Archivo Histórico",
+          "shorts": "Cosiaca Shorts"
+        }
+      }
+    }
+  },
+  "manifesto": {
+    "title": "Manifiesto",
+    "subtitle": "Hacia un futuro del arte y la tecnología",
+    "p1": "Núcleo Colectivo es un laboratorio de creación, archivo vivo y vitrina digital diseñado para inventar el futuro del arte y la cultura.",
+    "p2": "Creemos en la tecnología como una extensión de la sensibilidad humana, no como su reemplazo.",
+    "p3": "Articulamos diálogos entre la <span class='text-primary'>academia</span>, la <span class='text-accent'>industria</span> y el <span class='text-primary'>territorio</span>.",
+    "p4": "Buscamos generar un impacto real en la comunidad, fomentando la co-creación y el intercambio de saberes técnicos.",
+    "p5": "El código es nuestro pincel.",
+    "p6": "Exploramos las gramáticas culturales que emergen de la programación y la visualización de datos.",
+    "p7": "Nuestros pilares fundamentales son:",
+    "li1": "Laboratorios de experimentación constante.",
+    "li2": "Archivo vivo de procesos técnicos y artísticos.",
+    "li3": "Vitrina digital para la nueva creación.",
+    "p8": "Operamos como una red expandida de creadores, donde cada nodo aporta una visión única al sistema.",
+    "p9": "Nuestra estética se define como Brutalismo Técnico Orgánico: rigor en el sistema, fluidez en la experiencia.",
+    "p10": "La inteligencia artificial colectiva es nuestra herramienta para democratizar la creación.",
+    "p11": "Inventamos el futuro desde el Sur Global, con narrativas propias y voz auténtica.",
+    "p12": "BIENVENIDOS AL NÚCLEO.",
+    "cta": "Unirse al Colectivo"
+  },
+  "workshops_details": {
+    "ia": {
+      "section_3_obj_general_title": "OBJETIVO GENERAL",
+      "section_3_obj_general_text": "Integrar la Inteligencia Artificial como un colaborador creativo en los procesos de investigación y producción artística.",
+      "section_3_obj_specific_list": [
+        "Comprender los fundamentos éticos y técnicos de la IA generativa.",
+        "Desarrollar flujos de trabajo personalizados con herramientas de vanguardia.",
+        "Prototipar proyectos que integren imagen, sonido y código.",
+        "Fomentar el pensamiento crítico sobre el impacto de la IA en la cultura."
+      ],
+      "section_7_title": "METODOLOGÍA CORE",
+      "section_7_session_1_title": "EXPLORACIÓN Y ÉTICA",
+      "section_7_session_1_contents_list": ["Historia de la IA en el arte", "Conceptos básicos de ML", "Ética y sesgos algorítmicos"],
+      "section_7_session_1_results_list": ["Mapa conceptual del proyecto"],
+      "section_7_session_2_title": "IMAGEN GENERATIVA",
+      "section_7_session_2_contents_list": ["Prompt engineering avanzado", "Modelos de difusión", "Control de composición"],
+      "section_7_session_2_results_list": ["Primer set de activos visuales"],
+      "section_7_session_3_title": "SONIDO Y TIEMPO",
+      "section_7_session_3_contents_list": ["Síntesis de voz IA", "Generación musical algorítmica", "Video reactivo"],
+      "section_7_session_3_results_list": ["Prototipo audiovisual"],
+      "section_7_session_4_title": "DESPLIEGUE FINAL",
+      "section_7_session_4_contents_list": ["Integración en web/espacio", "Documentación de proceso", "Presentación"],
+      "section_7_session_4_results_list": ["Proyecto listo para vitrina"],
+      "section_6_title": "DINÁMICA DE TRABAJO",
+      "section_11_list": ["Acceso a servidores GPU", "Licencias de software pro", "Material de estudio digital"],
+      "section_10_title": "CERTIFICACIÓN",
+      "section_10_list": ["Insignia digital verificada", "Publicación en el archivo vivo", "Feedback personalizado del core"],
+      "contact_cta": "SOLICITAR INFORMACIÓN"
+    }
+  },
+  "artists": {
+    "manuel": {
+      "name": "Manuel Palacio",
+      "primary_roles": "Fundador | Artista Plástico + Diseñador Gráfico + Creador Digital IA",
+      "bio_intro": "Integra la creatividad visual con las nuevas tecnologías, explorando la relación entre imagen y sonido.",
+      "bio": "Diseñador gráfico publicitario y artista plástico. Su práctica habita el cruce entre la naturaleza y el código, especializándose en instalaciones inmersivas y sistemas generativos.",
+      "academic": "Artes Plásticas (UdeA) | Diseño Gráfico (Bellas Artes)",
+      "portfolio_clients": "Sinergia de Tejidos, Semillero SIITNE, Aleph Experimental",
+      "secondary_roles": "UI/UX Design, Creative Coding, React/Next.js Development, Generative Art, Blender 3D",
+      "nucleo_roles": "Fundador, Dirección Creativa, Lead Developer",
+      "websites": {
+        "illustration": "Ilustración",
+        "graphic_design": "Diseño Gráfico",
+        "collectives": "Colectivos e Investigación",
+        "projects": "Micro Experimentalista",
+        "sinergia_web": "Sinergia de Tejidos (Web)",
+        "sinergia_ig": "Sinergia (Instagram)",
+        "aleph_experimental": "Aleph Experimental",
+        "siitne_web": "Semillero SIITNE"
+      },
+      "youtube": {
+        "audiovisual_performance": "Performance Audiovisual",
+        "experimental_videoart": "Videoarte Experimental",
+        "siitne": "Canal SIITNE"
+      }
+    },
+    "carlos": {
+      "name": "Carlos Andrés Londoño Ruiz",
+      "primary_roles": "Realizador Audiovisual | Creador Digital | Director",
+      "bio_intro": "Realizador audiovisual con más de 15 años de experiencia, explorando narrativas transmedia.",
+      "bio": "Especialista en la integración de IA para la creación de mundos visuales imposibles. Su trabajo se centra en la memoria, el territorio y la experimentación digital.",
+      "academic": "Realización Audiovisual (Politécnico JIC) | Especialista en Cine (UdeA)",
+      "portfolio_clients": "Museo de Antioquia, Comfama, Alcaldía de Medellín, Ministerio de Cultura",
+      "secondary_roles": "Realización Audiovisual, Montaje, Colorización, Prompt Engineering, Dirección de Arte",
+      "nucleo_roles": "Director Audiovisual, Investigador Transmedia",
+      "websites": {
+        "drive_ia": "Portafolio IA (Drive)"
+      }
+    },
+    "maria-cecilia": {
+      "name": "María Cecilia Castaño",
+      "primary_roles": "Comunicadora · Bióloga | Gestión y Alianzas",
+      "bio_intro": "Articula diálogos entre ciencia, comunicación y arté para el bienestar colectivo.",
+      "bio": "Gestión estratégica de proyectos culturales y sociales. Bióloga enfocada en la conservación del territorio y comunicadora experta en metodologías de cocreación.",
+      "academic": "Biología (UdeA) | Comunicación Social (UPB)",
+      "portfolio_clients": "Jardín Botánico de Medellín, Corantioquia, Red de Museos",
+      "secondary_roles": "Gestión de Proyectos, Comunicación Estratégica, Metodologías de Co-creación, Conservación de Biodiversidad",
+      "nucleo_roles": "Gestión y Alianzas, Mediación Científico-Artística"
+    }
+  },
+  "members": {
+    "title": "Nodos del Colectivo",
+    "subtitle": "Comunidad Expandida",
+    "intro": "Un núcleo interdisciplinar donde convergen artistas, biólogos, comunicadores y desarrolladores.",
+    "view_profile": "Ingresar al Perfil",
+    "sections": {
+      "experience": "TRAYECTORIA Y ENFOQUE",
+      "academic": "FORMACIÓN ACADÉMICA",
+      "clients": "COLABORACIONES",
+      "volunteer": "PROYECTOS SOCIALES",
+      "skills": "HABILIDADES TÉCNICAS",
+      "roles": "ROL EN EL NÚCLEO"
+    },
+    "cta": {
+      "title": "¿Eres un nodo potencial?",
+      "description": "Si tu práctica habita el cruce entre arte y tecnología, el núcleo se expande contigo.",
+      "button": "POSTULARME AL COLECTIVO"
+    }
+  },
+  "work": {
+    "title": "Vitrina Digital",
+    "subtitle": "Archivo vivo de procesos y resultados",
+    "filters": {
+      "all": "Todos",
+      "special": "Especiales",
+      "interactive": "Interactivos",
+      "ai": "IA Creativa",
+      "video": "Videoarte"
+    },
+    "placeholder": {
+      "title": "Tu Obra Aquí",
+      "description": "Buscamos proyectos que exploren nuevas gramáticas culturales.",
+      "cta": "ENVIAR PROPUESTA"
+    }
+  },
+  "radio": {
+    "hero_subtitle": "SINTONÍA EXPERIMENTAL GLOBAL",
+    "headline": "Archivo de señales sonoras, paisajes acústicos y exploraciones radiales de vanguardia.",
+    "status_line": "SEÑAL ACTIVA / NODO RADIAL ONLINE",
+    "now_playing": "EN SINTONÍA",
+    "player_microcopy": "CONTROL DE SEÑAL / FRECUENCIA 128KBPS",
+    "hide": "OCULTAR PRODUCCIÓN",
+    "schedule_title": "PROGRAMACIÓN SEMANAL",
+    "schedule_footer": "HORARIOS SUJETOS A INTERVENCIÓN IA",
+    "schedule_days": [
+      { "day": "Lunes", "desc": "Paisaje Sonoro Territorial" },
+      { "day": "Martes", "desc": "Electrónica Experimental" },
+      { "day": "Miércoles", "desc": "Archivo Radiofónico" },
+      { "day": "Jueves", "desc": "Nuevas Narrativas IA" },
+      { "day": "Viernes", "desc": "Sesión VJ / Live Coding" }
+    ],
+    "suggest_station_title_new": "¿Falta algún nodo radial?",
+    "suggest_station_description_new": "Si conoces una emisora experimental que deba estar en el núcleo, envíanos el enlace.",
+    "suggest_station_cta_new": "SUGERIR EMISORA",
+    "info_banner": {
+      "title": "SISTEMA DE RADIO",
+      "subtitle": "Acceso a la memoria sonora del colectivo",
+      "system_info": "INFO_SISTEMA",
+      "cta": "VER MÁS",
+      "modal_header_title": "NÚCLEO <span class='text-amber-500'>RADIO</span>",
+      "modal_header_subtitle": "PROTOCOLO DE ESCUCHA",
+      "col1_title": "ARCHIVO",
+      "col1_subtitle": "MEMORIA SONORA",
+      "col1_p1": "Repositorio vivo de intervenciones sonoras.",
+      "col1_p2": "Cada señal es capturada por nuestros nodos.",
+      "col1_section_title": "TAGS DE SEÑAL",
+      "col1_tags": ["Experimental", "Ambient", "IA", "Field Recording"],
+      "col2_title": "GRILLA",
+      "col2_subtitle": "EMISIONES CORE",
+      "col2_schedule": [
+        { "d": "L-V", "t": "Escucha Activa", "sub": "Curaduría Global" },
+        { "d": "S-D", "t": "Inmersión", "sub": "Paisajes Profundos" }
+      ],
+      "col2_footer": "ZONA HORARIA COL",
+      "col3_title": "FUNCIONES",
+      "col3_subtitle": "OPERACIONES",
+      "col3_community_title": "COMUNIDAD",
+      "col3_community_p": "Participa en la creación de paisajes.",
+      "col3_functions_title": "CARACTERÍSTICAS",
+      "col3_functions_list": ["Visualización Real-time", "Auto-DJ con IA", "Caché de audio"],
+      "col3_quote_p1": "EL SONIDO ES",
+      "col3_quote_p2": "MATERIA DIGITAL",
+      "modal_footer_id": "STATION_CORE_V2",
+      "modal_footer_status": "STABLE",
+      "modal_footer_location": "MEDELLÍN"
+    }
+  },
+  "podcast": {
+    "original_production": "PRODUCCIÓN ORIGINAL",
+    "title": "En la Sala con Cosiaca",
+    "description": "NARRATIVAS TRANSMEDIA",
+    "longDescription": "Una exploración profunda sobre la identidad, el humor y la historia de Antioquia a través del personaje de Cosiaca.",
+    "now_playing_episode": "EPISODIO ACTUAL",
+    "episodes_available": "EPISODIOS DISPONIBLES",
+    "about_title": "SOBRE ESTA PRODUCCIÓN",
+    "info": "Proyecto ganador de la Convocatoria de Fomento y Estímulos para el Arte y la Cultura.",
+    "categories": {
+      "intro": "Introducción",
+      "character": "El Personaje",
+      "author": "Autores e Identidad",
+      "soundscape": "Paisaje Sonoro",
+      "platform": "Plataformas"
+    },
+    "banner": {
+      "subtitle": "NARRATIVAS TRANSMEDIA",
+      "description": "Explora el universo de <b>Cosiaca</b>, un viaje entre la historia, la picardía y la tecnología.",
+      "listen_now": "Escuchar Ahora",
+      "show_content": "Ver Episodios"
+    },
+    "episodes": {
+      "saludo": { "title": "Saludo de Bienvenida", "description": "Introducción al universo transmedia de Cosiaca." },
+      "culebreo": { "title": "El Culebreo", "description": "Historias de plazas y mercados." },
+      "trocha": { "title": "En la Trocha", "description": "Relatos de arriería y montaña." },
+      "fernando-garcia": { "title": "Fernando González", "description": "El filósofo de otra parte y su visión de la identidad." },
+      "francisco-herrera": { "title": "Francisco Herrera y Campuzano", "description": "Fundación y memoria regional." },
+      "cancion-valle": { "title": "Canción del Valle", "description": "Paisaje acústico del Valle de Aburrá." },
+      "verraquera-arriera": { "title": "Verraquera Arriera", "description": "La fuerza del trabajo y la montaña." },
+      "medellin-hoy": { "title": "Medellín Hoy", "description": "Perspectivas urbanas y transformaciones." },
+      "medellin-cafetales": { "title": "Entre Cafetales", "description": "Sonidos de la tradición cafetera." },
+      "violencia-esperanza": { "title": "De la Violencia a la Esperanza", "description": "Relatos de resiliencia y futuro." }
+    }
+  },
+  "channel": {
+    "hero_subtitle": "VITRINA AUDIOVISUAL",
+    "headline": "Archivo curado de contenidos audiovisuales especializados en arte y tecnología.",
+    "status_line": "SISTEMA ONLINE / CANAL ACTIVO",
+    "info_banner": {
+      "title": "NÚCLEO CHANNEL",
+      "subtitle": "Explora el archivo audiovisual",
+      "cta": "DETALLES"
+    }
+  },
+  "channel_info_banner": {
+    "title": "NÚCLEO CHANNEL",
+    "subtitle": "Sistema de visualización de contenidos",
+    "system_info": "INFO_CANAL",
+    "cta": "INGRESAR",
+    "modal_header_title": "CANAL <span class='text-accent'>DIGITAL</span>",
+    "modal_header_subtitle": "ARCHIVO VIVO",
+    "col1_title": "CURADURÍA",
+    "col1_subtitle": "FILTRO CRÍTICO",
+    "col1_p1": "Selección rigurosa de piezas audiovisuales.",
+    "col1_p2": "Enfoque en la intersección arte-tecnología.",
+    "col1_section_title": "NÚCLEOS TEMÁTICOS",
+    "col1_tags": ["Videoarte", "IA", "Código", "Pensamiento"],
+    "col2_title": "ESTRUCTURA",
+    "col2_subtitle": "SECCIONES CORE",
+    "col2_sections": [
+      { "t": "Arte IA", "sub": "Creación Algorítmica" },
+      { "t": "Código", "sub": "Sistemas Abiertos" }
+    ],
+    "col2_footer": "V.1.5",
+    "col3_title": "MISIÓN",
+    "col3_subtitle": "OBJETIVO",
+    "col3_community_title": "ESPACIO",
+    "col3_community_p": "Un canal para la reflexión y la creación.",
+    "col3_functions_title": "CARACTERÍSTICAS",
+    "col3_functions_list": ["HD Streaming", "Contexto Curatorial", "Acceso Libre"],
+    "col3_quote_p1": "LA IMAGEN ES",
+    "col3_quote_p2": "UNA HERRAMIENTA",
+    "modal_footer_id": "CHANNEL_CORE_01",
+    "modal_footer_status": "ONLINE",
+    "modal_footer_location": "GLOBAL"
+  },
+  "footer": {
+    "title": "Núcleo Colectivo",
+    "description": "Plataforma de creación contemporánea, archivo vivo y vitrina digital.",
+    "explore": "Explorar",
+    "showcase": "Vitrina",
+    "community": "Comunidad",
+    "radio_archive": "Archivo Radio",
+    "legal": "Legal",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "member_access": "Acceso Miembros",
+    "login": "Ingresar",
+    "copyright": "© 2026 Núcleo Colectivo. Todos los derechos reservados.",
+    "location": "MEDELLÍN_COLOMBIA"
+  },
+  "challenge": {
+    "cover": {
+      "title": "ACTIVACIÓN CREATIVA",
+      "subtitle": "Sistemas de provocación para la innovación disruptiva",
+      "strategic_challenge": {
+        "title": "RETO ESTRATÉGICO",
+        "description": "Misiones de creación diseñadas para equipos y organizaciones."
+      },
+      "creative_machine": {
+        "title": "MÁQUINA CREATIVA",
+        "description": "Generador de misiones aleatorias impulsado por IA."
+      }
+    },
+    "creative": {
+      "variables": {
+        "concepts": "Biomimesis|Entropía|Sincronicidad|Gobernanza Digital|Memoria Ancestral|Algoritmos Genéticos",
+        "actions": "Diseñar una instalación|Escribir un manifiesto|Prototipar un objeto|Crear un sistema sonoro",
+        "challenges": "Sin electricidad|Usando solo luz|En un entorno hostil|Con datos en tiempo real",
+        "contexts": "Un bosque nublado|Una metrópolis distópica|El metaverso|Una comunidad rural"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Conecta con el Núcleo",
+    "intro": "Estamos abiertos a nuevas colaboraciones, proyectos institucionales e intercambio de saberes.",
+    "email_label": "CORREO ELECTRÓNICO",
+    "email_value": "nucleo.colectivo.art@gmail.com",
+    "location_label": "UBICACIÓN",
+    "location_value": "Medellín, Colombia",
+    "follow_us": "SÍGUENOS",
+    "form_name": "NOMBRE",
+    "form_name_placeholder": "Tu nombre",
+    "form_email": "CORREO",
+    "form_email_placeholder": "tu@email.com",
+    "form_message": "MENSAJE",
+    "form_message_placeholder": "¿Cómo podemos colaborar?",
+    "form_submit": "ENVIAR MENSAJE",
+    "cta_title": "¿Deseas unirte?",
+    "cta_description": "El núcleo se expande a través de sus nodos. Envía tu propuesta.",
+    "cta_button": "POSTULARME AHORA"
+  }
+}

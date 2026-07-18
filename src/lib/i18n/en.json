@@ -1,0 +1,144 @@
+
+{
+  "lang": "en",
+  "header": {
+    "home": "Home",
+    "manifesto": "Manifesto",
+    "labs": "Labs",
+    "community": "Community",
+    "showcase": "Showcase",
+    "radio": "Radio",
+    "channel": "Channel",
+    "challenges": "Challenges",
+    "solutions": "Solutions_",
+    "contact": "Contact"
+  },
+  "splash": {
+    "welcome": "WELCOME TO THE CREATION CORE"
+  },
+  "hero_animated_text": {
+    "slide1": {
+      "line1": "ART",
+      "line2": "CULTURE",
+      "line3": "TECHNOLOGY"
+    },
+    "slide2": "WE IMAGINE <span class='text-primary'>FUTURES</span>",
+    "slide3": "<span class='text-accent'>GENERATIVE</span> DESIGN",
+    "slide4": "NUCLEO_COLLECTIVE",
+    "slide5": "SOCIAL <span class='text-primary'>TRANSFORMATION</span>",
+    "slide6": "COLLABORATIVE <span class='text-accent'>AI</span>",
+    "slide7": "LIVING_ARCHIVE",
+    "slide8": "INTERACTIVE <span class='text-primary'>ART</span>",
+    "slide9": "CONTEMPORARY CREATION"
+  },
+  "home_v2": {
+    "hero": {
+      "description": "CREATION PLATFORM, LIVING ARCHIVE AND DIGITAL SHOWCASE FOR THE ART OF TOMORROW.",
+      "cta_primary": "Explore Showcase",
+      "cta_secondary": "Meet the Network"
+    },
+    "what_to_do": {
+      "title": "ACTIVATIONS",
+      "subtitle": "What can you do in the Core?",
+      "item1_title": "Laboratories",
+      "item1_desc": "Spaces for technical and conceptual experimentation with cutting-edge tools.",
+      "item2_title": "Archive",
+      "item2_desc": "Living memory of artistic and technological processes developed by the collective.",
+      "item3_title": "Community",
+      "item3_desc": "An expanded network of creative nodes inhabiting the art-tech intersection.",
+      "item4_title": "AI Challenges",
+      "item4_desc": "Creative machine to activate innovation missions and disruptive thinking."
+    },
+    "who_is_it_for": {
+      "title": "FOR WHOM",
+      "subtitle": "Connecting different nodes of the ecosystem",
+      "p1": "We articulate dialogues between academia, industry and territory to generate real impact.",
+      "item1_title": "Artists and Creators",
+      "item1_desc": "Seeking to expand their practice through code, AI and new media.",
+      "item2_title": "Institutions and Brands",
+      "item2_desc": "Requiring disruptive creative solutions and immersive experiences.",
+      "item3_title": "Global Community",
+      "item3_desc": "Anyone interested in the future of culture and technology."
+    },
+    "featured_cta": "VIEW FULL ARCHIVE",
+    "community_cta": {
+      "title": "THE CORE EXPANDS",
+      "subtitle": "Open Call",
+      "desc": "WE ARE LOOKING FOR NEW NODES TO INVENT THE FUTURE.",
+      "cta": "APPLY NOW"
+    }
+  },
+  "challenge": {
+    "cover": {
+      "title": "CREATIVE ACTIVATION",
+      "subtitle": "Provocation systems for disruptive innovation",
+      "strategic_challenge": {
+        "title": "STRATEGIC CHALLENGE",
+        "description": "Creation missions designed for teams and organizations."
+      },
+      "creative_machine": {
+        "title": "CREATIVE MACHINE",
+        "description": "Random mission generator powered by AI."
+      }
+    }
+  },
+  "manifesto": {
+    "title": "Manifesto",
+    "subtitle": "Towards a future of art and technology",
+    "p1": "Núcleo Colectivo is a creative laboratory, living archive, and digital showcase designed to invent the future of art and culture from the intersection of technology, artificial intelligence, and critical thinking.",
+    "p2": "We believe in technology as an extension of human sensitivity, not its replacement.",
+    "p3": "We articulate dialogues between <span class='text-primary'>academia</span>, <span class='text-accent'>industry</span> and <span class='text-primary'>territory</span>.",
+    "p4": "We seek to generate a real impact in the Medellín community, fostering co-creation and technical knowledge exchange.",
+    "p5": "Code is our brush.",
+    "p6": "We explore the cultural grammars that emerge from programming and data visualization.",
+    "p7": "Our fundamental pillars are:",
+    "li1": "Laboratories for constant experimentation.",
+    "li2": "Living archive of technical and artistic processes.",
+    "li3": "Digital showcase for new creation.",
+    "p8": "We operate as an expanded network of creators, where each node brings a unique vision to the system.",
+    "p9": "Our aesthetic is defined as Organic Technical Brutalism: rigor in the system, fluidity in the experience.",
+    "p10": "Collective artificial intelligence is our tool to democratize creation.",
+    "p11": "We invent the future from the Global South, with our own narratives and an authentic voice.",
+    "p12": "WELCOME TO THE CORE.",
+    "cta": "Join the Collective"
+  },
+  "workshops_details": {
+    "ia": {
+      "section_3_obj_general_title": "GENERAL OBJECTIVE",
+      "section_3_obj_general_text": "Integrate Artificial Intelligence as a creative collaborator in research and artistic production processes.",
+      "section_3_obj_specific_list": [
+        "Understand the ethical and technical foundations of generative AI.",
+        "Develop custom workflows with cutting-edge tools.",
+        "Prototype projects integrating image, sound, and code.",
+        "Foster critical thinking on AI's impact on culture."
+      ],
+      "section_7_title": "CORE METHODOLOGY",
+      "section_7_session_1_title": "EXPLORATION & ETHICS",
+      "section_7_session_1_contents_list": ["History of AI in Art", "Basic ML Concepts", "Ethical Bias"],
+      "section_7_session_1_results_list": ["Project Concept Map"],
+      "section_10_title": "CERTIFICATION",
+      "contact_cta": "REQUEST INFO"
+    }
+  },
+  "artists": {
+    "manuel": {
+      "name": "Manuel Palacio",
+      "primary_roles": "Founder | Artist + Graphic Designer + AI Digital Creator",
+      "bio_intro": "Integrates visual creativity with new technologies, exploring image-sound relationships.",
+      "bio": "Graphic designer and visual artist. His practice inhabits the intersection of nature and code, specializing in immersive installations and generative systems.",
+      "academic": "Fine Arts (UdeA) | Graphic Design (Bellas Artes)"
+    },
+    "carlos": {
+      "name": "Carlos Andrés Londoño Ruiz",
+      "primary_roles": "Audiovisual Producer | Digital Creator | Director",
+      "bio_intro": "Audiovisual producer with over 15 years of experience, exploring transmedia narratives.",
+      "bio": "Specialist in integrating AI to create impossible visual worlds. His work focuses on memory, territory, and digital experimentation."
+    },
+    "maria-cecilia": {
+      "name": "María Cecilia Castaño",
+      "primary_roles": "Communicator · Biologist | Management & Alliances",
+      "bio_intro": "Articulates dialogues between science, communication, and art for collective well-being.",
+      "bio": "Strategic management of cultural projects. Biologist focused on territory conservation and communicator expert in co-creation methodologies."
+    }
+  }
+}

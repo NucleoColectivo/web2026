@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "manuel-palacio",
+      "description": "Portrait of Manuel Palacio",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3Njg5ODYyMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "carlos-londono",
+      "description": "Portrait of Carlos Londoño",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3Njg5ODYyMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "resonancia-bg",
+      "description": "Resonancia section background",
+      "imageUrl": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2000&auto=format&fit=crop",
+      "imageHint": "concert sound"
+    },
+    {
+      "id": "malla-sonica",
+      "description": "Malla Sónica 4.0 visualizer",
+      "imageUrl": "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMGRpZ2l0YWx8ZW58MHx8fHwxNzY5MDAwMjE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract digital"
+    },
+    {
+      "id": "resonancias-latentes",
+      "description": "Resonancias Latentes installation",
+      "imageUrl": "https://images.unsplash.com/photo-1682220784379-e0ce4380db64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMGxpZ2h0fGVufDB8fHx8MTc2ODk0MzY4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract light"
+    }
+  ]
+}

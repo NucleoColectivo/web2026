@@ -1,0 +1,51 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Público: lectura de proyectos publicados
+    match /projects/{projectId} {
+      allow read: if resource.data.status == "published";
+      allow write: if request.auth != null && request.auth.token.role == "admin";
+    }
+
+    // Artistas: lectura pública
+    match /artists/{artistId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.role == "admin";
+    }
+
+    // Colecciones curatoriales
+    match /collections/{collectionId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.role == "admin";
+    }
+    
+    // Laboratorios y talleres
+    match /labs/{labId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.role == "admin";
+    }
+
+    // Comunidad: acceso restringido
+    match /community/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Podcasts: lectura pública
+    match /podcasts/{podcastId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.role == "admin";
+    }
+
+    // Contenidos / Blog: lectura pública
+    match /contentItems/{itemId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.role == "admin";
+    }
+
+    // Artefactos y Retos guardados: acceso por usuario
+    match /artifacts/{appId}/users/{userId}/challenges/{challengeId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}

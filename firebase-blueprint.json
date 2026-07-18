@@ -1,0 +1,229 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "Represents a project in the cultural archive.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "slug": { "type": "string" },
+        "summary": { "type": "string" },
+        "description": { "type": "string" },
+        "year": { "type": "number" },
+        "status": { "type": "string", "enum": ["published", "draft", "archived"] },
+        "featured": { "type": "boolean" },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "name": { "type": "string" },
+              "role": { "type": "array", "items": { "type": "string" } }
+            },
+            "required": ["id", "name"]
+          }
+        },
+        "curatorial_line": { "type": "string" },
+        "formats": { "type": "array", "items": { "type": "string" } },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "process": {
+          "type": "object",
+          "properties": {
+            "concept": { "type": "string" },
+            "research": { "type": "string" },
+            "development": { "type": "string" },
+            "iterations": { "type": "string" },
+            "final_version": { "type": "string" }
+          }
+        },
+        "technology": {
+          "type": "object",
+          "properties": {
+            "software": { "type": "array", "items": { "type": "string" } },
+            "hardware": { "type": "array", "items": { "type": "string" } },
+            "ai_models": { "type": "array", "items": { "type": "string" } },
+            "languages": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "dataset": {
+          "type": "object",
+          "properties": {
+            "source": { "type": "string" },
+            "type": { "type": "string" },
+            "ethical_notes": { "type": "string" }
+          }
+        },
+        "media": {
+          "type": "object",
+          "properties": {
+            "hero_image": { "type": "string", "format": "uri" },
+            "gallery": { "type": "array", "items": { "type": "string", "format": "uri" } },
+            "video": { "type": "string", "format": "uri" },
+            "audio": { "type": "string", "format": "uri" }
+          }
+        },
+        "exhibitions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "place": { "type": "string" },
+              "date": { "type": "string", "format": "date" },
+              "version": { "type": "string" }
+            }
+          }
+        },
+        "license": { "type": "string" },
+        "collaboration": {
+          "type": "object",
+          "properties": {
+            "open": { "type": "boolean" },
+            "contact": { "type": "string" }
+          }
+        },
+        "metrics": {
+          "type": "object",
+          "properties": {
+            "views": { "type": "number" },
+            "likes": { "type": "number" },
+            "downloads": { "type": "number" }
+          }
+        },
+        "embedding": {
+            "type": "object",
+            "properties": {
+              "vector_id": { "type": "string" },
+              "text_for_embedding": { "type": "string" }
+            }
+        },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "title", "slug"]
+    },
+    "Artist": {
+      "title": "Artist",
+      "description": "Represents an artist or collective member.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "slug": { "type": "string" },
+        "bio": { "type": "string" },
+        "roles": { "type": "array", "items": { "type": "string" } },
+        "location": { "type": "string" },
+        "social": {
+            "type": "object",
+            "properties": {
+                "instagram": {"type": "string"},
+                "web": {"type": "string"},
+                "facebook": {"type": "string"},
+                "tiktok": {"type": "string"},
+                "whatsapp": {"type": "string"},
+                "linkedin": {"type": "string"},
+                "youtube": { "type": "array", "items": { "type": "object", "properties": { "url": {"type": "string"}, "label": {"type": "string"} } } }
+            }
+        },
+        "avatar": { "type": "string", "format": "uri" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "name", "slug"]
+    },
+    "Collection": {
+      "title": "Collection",
+      "description": "Represents a curatorial collection of projects.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "slug": { "type": "string" },
+        "description": { "type": "string" },
+        "projects": { "type": "array", "items": { "type": "string" } },
+        "curator": { "type": "string" },
+        "featured": { "type": "boolean" }
+      },
+      "required": ["id", "title", "slug"]
+    },
+    "Lab": {
+        "title": "Lab",
+        "description": "Represents a lab or workshop.",
+        "type": "object",
+        "properties": {
+            "id": { "type": "string" },
+            "title": { "type": "string" },
+            "description": { "type": "string" },
+            "level": { "type": "string" },
+            "modules": { "type": "array", "items": { "type": "string" } },
+            "price": { "type": "number" },
+            "active": { "type": "boolean" }
+        },
+        "required": ["id", "title"]
+    },
+    "CommunityMember": {
+        "title": "Community Member",
+        "description": "Represents a community member.",
+        "type": "object",
+        "properties": {
+            "id": { "type": "string" },
+            "name": { "type": "string" },
+            "email": { "type": "string", "format": "email" },
+            "role": { "type": "string" },
+            "interests": { "type": "array", "items": { "type": "string" } },
+            "joinedAt": { "type": "string", "format": "date-time" }
+        },
+        "required": ["id", "name", "email"]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/projects/{projectId}",
+        "definition": {
+          "entityName": "Project",
+          "schema": { "$ref": "#/backend/entities/Project" },
+          "description": "Stores all project data for the cultural archive."
+        }
+      },
+      {
+        "path": "/artists/{artistId}",
+        "definition": {
+          "entityName": "Artist",
+          "schema": { "$ref": "#/backend/entities/Artist" },
+          "description": "Stores profiles for artists and collaborators."
+        }
+      },
+      {
+        "path": "/collections/{collectionId}",
+        "definition": {
+          "entityName": "Collection",
+          "schema": { "$ref": "#/backend/entities/Collection" },
+          "description": "Stores curatorial collections that group projects."
+        }
+      },
+      {
+          "path": "/labs/{labId}",
+          "definition": {
+              "entityName": "Lab",
+              "schema": { "$ref": "#/backend/entities/Lab"},
+              "description": "Stores information about labs and workshops."
+          }
+      },
+      {
+          "path": "/community/{userId}",
+          "definition": {
+              "entityName": "CommunityMember",
+              "schema": { "$ref": "#/backend/entities/CommunityMember" },
+              "description": "Stores information about registered community members."
+          }
+      }
+    ]
+  }
+}
