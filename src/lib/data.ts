@@ -288,8 +288,8 @@ export const PROJECTS = [
     id: 'nucleo-bots-ai',
     slug: 'nucleo-bots-ai',
     year: 2024,
-    status: 'published',
-    featured: true,
+    status: 'draft',
+    featured: false,
     curatorial_line: "Herramientas con IA",
     authors: [
       { id: 'manuel', name: 'Manuel Palacio', role: ['creador'] }

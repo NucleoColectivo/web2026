@@ -142,7 +142,7 @@ export function WorkView() {
     }));
     const regularProjects = PROJECTS.map(p => ({ ...p, type: 'regular' }));
     
-    const combined: Project[] = [...formattedSpecial, ...regularProjects];
+    const combined: Project[] = [...formattedSpecial, ...regularProjects].filter(p => p.status !== 'draft');
     const priorityIds = ['cosiaca', 'criaturas-imposibles'];
 
     return combined.sort((a, b) => {
