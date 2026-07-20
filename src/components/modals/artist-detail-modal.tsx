@@ -62,7 +62,7 @@ export function ArtistDetailModal({ member, onClose }: ArtistDetailModalProps) {
 
                 {/* Cover / Image Side */}
                 <div className="w-full md:w-5/12 h-64 md:h-auto relative bg-neutral-950 flex-shrink-0 border-b-2 md:border-b-0 md:border-r-2 border-black overflow-hidden">
-                    <Image src={member.avatar} alt={name} fill className="object-cover opacity-80 grayscale" />
+                    <Image referrerPolicy="no-referrer" src={member.avatar} alt={name} fill className="object-cover opacity-80 grayscale" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 w-full p-8 md:p-12">
                         <div className="bg-white text-black px-2 py-1 text-[8px] font-black uppercase tracking-widest inline-block mb-4 font-code">

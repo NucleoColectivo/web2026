@@ -237,7 +237,7 @@ const VideoCard = ({ video, onVideoSelect }: { video: Video; onVideoSelect: (vid
       className="group text-left bg-neutral-900 border border-neutral-800 rounded-lg overflow-hidden hover:border-accent/70 transition-all duration-300 flex flex-col h-full shadow-lg"
     >
       <div className="relative aspect-video w-full overflow-hidden bg-neutral-950">
-        <Image 
+        <Image referrerPolicy="no-referrer" 
           src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`} 
           alt={video.titulo} 
           fill 
@@ -281,7 +281,7 @@ const FeaturedVideoCard = ({ video, onVideoSelect }: { video: Video; onVideoSele
             className="group text-left bg-neutral-900 border border-neutral-800 rounded-lg overflow-hidden hover:border-accent/70 transition-all duration-300 flex flex-col h-full shadow-lg"
         >
             <div className="relative aspect-video w-full overflow-hidden bg-neutral-950">
-                <Image 
+                <Image referrerPolicy="no-referrer" 
                   src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`} 
                   alt={video.titulo} 
                   fill 
@@ -355,7 +355,7 @@ export function NucleoChannelView() {
           <SpatialSection className="text-center mb-12 md:mb-16">
               <div className="flex justify-center items-center gap-4 mb-4">
                 <div className="relative w-16 h-16 md:w-20 md:h-20 flex-shrink-0">
-                  <Image src="https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/ICONO%20LOGO%20AMARILLO.png" alt="Núcleo Colectivo Logo" fill className="object-contain" />
+                  <Image referrerPolicy="no-referrer" src="https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/ICONO%20LOGO%20AMARILLO.png" alt="Núcleo Colectivo Logo" fill className="object-contain" />
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-black font-headline tracking-tighter text-white">
                   <span className="text-neutral-500">NÚCLEO/</span>CHANNEL

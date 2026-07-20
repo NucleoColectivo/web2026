@@ -347,7 +347,7 @@ export function RadioPageView() {
         <SpatialSection className="text-center mb-8 md:mb-10">
             <div className="flex justify-center items-center gap-3 md:gap-4 mb-4">
               <div className="relative w-12 h-12 md:w-20 md:h-20 flex-shrink-0">
-                <Image src="https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/ICONO%20LOGO%20AMARILLO.png" alt="Núcleo Colectivo Logo" fill className="object-contain" />
+                <Image referrerPolicy="no-referrer" src="https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/ICONO%20LOGO%20AMARILLO.png" alt="Núcleo Colectivo Logo" fill className="object-contain" />
               </div>
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-black font-headline tracking-tighter text-white">
                 <span className="text-neutral-500">NÚCLEO/</span>RADIO
@@ -497,7 +497,7 @@ export function RadioPageView() {
                 <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center mt-8 mb-10 text-center md:text-left">
                     <div className="w-40 md:w-1/4 flex-shrink-0">
                         <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl">
-                            <Image src={PODCAST_DATA.image} alt={t('podcast.title')} fill className="object-cover" />
+                            <Image referrerPolicy="no-referrer" src={PODCAST_DATA.image} alt={t('podcast.title')} fill className="object-cover" />
                         </div>
                     </div>
                     <div>
@@ -511,7 +511,7 @@ export function RadioPageView() {
                   <div className="bg-black/40 border border-neutral-700 rounded-lg p-4 my-6 md:my-8 animate-fade-in">
                     <div className="flex items-center gap-3 md:gap-4">
                       <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
-                        <Image src={PODCAST_DATA.image} alt="Podcast Cover" fill className="rounded object-cover" />
+                        <Image referrerPolicy="no-referrer" src={PODCAST_DATA.image} alt="Podcast Cover" fill className="rounded object-cover" />
                       </div>
                       <div className="flex-grow overflow-hidden">
                         <p className="text-[10px] text-accent font-bold">{t('podcast.now_playing_episode')}</p>

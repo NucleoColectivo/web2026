@@ -159,6 +159,35 @@ export const ARTISTS = [
 
 export const PROJECTS = [
   {
+    id: 'vigilia-exp',
+    slug: 'vigilia-exp',
+    year: 2026,
+    status: 'published',
+    featured: true,
+    curatorial_line: "IA Creativa & Experiencia Web",
+    authors: [
+      { id: 'manuel', name: 'Manuel Palacio', role: ['creador'] }
+    ],
+    formats: ['Aplicación Web', 'IA', 'Interactivo'],
+    tags: ['ia', 'web-app', 'experiencia'],
+    technology: {
+      software: ['React', 'Next.js'],
+      hardware: [],
+      ai_models: [],
+      languages: ["Typescript"]
+    },
+    media: {
+      hero_image: 'https://raw.githubusercontent.com/NucleoColectivo/vigiliaexp/main/img/vigilia.png',
+      gallery: [
+        'https://raw.githubusercontent.com/NucleoColectivo/vigiliaexp/main/img/vigilia.png'
+      ],
+      externalUrl: 'https://vigiliaexp.vercel.app/'
+    },
+    exhibitions: [],
+    license: 'Propietaria',
+    collaboration: { open: false, contact: 'contacto@nucleocolectivo.com' },
+  },
+  {
     id: 'criaturas-imposibles',
     slug: 'criaturas-imposibles',
     year: 2024,

@@ -19,14 +19,14 @@
       "line2": "CULTURA",
       "line3": "TECNOLOGÍA"
     },
-    "slide2": "IMAGINAMOS <span class='text-primary'>FUTUROS</span>",
-    "slide3": "DISEÑO <span class='text-accent'>GENERATIVO</span>",
-    "slide4": "NÚCLEO_COLECTIVO",
-    "slide5": "TRANSFORMACIÓN <span class='text-primary'>SOCIAL</span>",
-    "slide6": "IA <span class='text-accent'>COLABORATIVA</span>",
-    "slide7": "ARCHIVO_VIVO",
-    "slide8": "ARTE <span class='text-primary'>INTERACTIVO</span>",
-    "slide9": "CREACIÓN CONTEMPORÁNEA"
+    "slide2": "IMAGINAMOS <br/> <span class='text-primary'>FUTUROS</span>",
+    "slide3": "DISEÑO <br/> <span class='text-accent'>GENERATIVO</span>",
+    "slide4": "NÚCLEO <br/> COLECTIVO",
+    "slide5": "TRANSFORMACIÓN <br/> <span class='text-primary'>SOCIAL</span>",
+    "slide6": "IA <br/> <span class='text-accent'>COLABORATIVA</span>",
+    "slide7": "ARCHIVO <br/> VIVO",
+    "slide8": "ARTE <br/> <span class='text-primary'>INTERACTIVO</span>",
+    "slide9": "CREACIÓN <br/> CONTEMPORÁNEA"
   },
   "home": {
     "est_date": "EST_2026",
@@ -72,6 +72,10 @@
     }
   },
   "projects_data": {
+    "vigilia-exp": {
+      "title": "VigiliaExp",
+      "summary": "Experiencia web interactiva que explora los límites entre el sueño, la vigilia y la inteligencia artificial."
+    },
     "criaturas-imposibles": {
       "title": "Criaturas Imposibles",
       "summary": "Un experimento visual que utiliza la IA para crear nuevas realidades, explorando el concepto de falso documental."

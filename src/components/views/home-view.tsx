@@ -201,7 +201,7 @@ export function HomeView() {
                       className="relative group overflow-hidden rounded-none border-2 border-black aspect-[4/3] bg-muted cursor-pointer shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
                       onClick={() => handleProjectClick(project)}
                   >
-                      <Image 
+                          <Image referrerPolicy="no-referrer"
                           src={project.media.hero_image}
                           alt={t(`projects_data.${project.id}.title`)}
                           fill

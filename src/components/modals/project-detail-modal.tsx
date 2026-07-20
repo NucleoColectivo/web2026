@@ -39,7 +39,7 @@ export function ProjectDetailModal({ project, onClose }: ProjectDetailModalProps
         
         {/* Image Panel */}
         <div className="w-full md:w-4/12 h-80 md:h-auto relative bg-neutral-900 flex-shrink-0 border-b-2 md:border-b-0 md:border-r-2 border-black">
-          <Image src={project.media.hero_image} alt={project.title} fill className="object-cover opacity-90" />
+            <Image referrerPolicy="no-referrer" src={project.media.hero_image} alt={project.title} fill className="object-cover opacity-90" />
           <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6 md:p-8">
             <span className="text-accent font-code text-[10px] font-black uppercase tracking-[0.3em] mb-2 block">{project.curatorial_line}</span>
             <h2 className="text-3xl md:text-5xl font-black text-white leading-none font-headline uppercase italic tracking-tighter">{project.title}</h2>
@@ -70,7 +70,7 @@ export function ProjectDetailModal({ project, onClose }: ProjectDetailModalProps
                             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
                                 {project.media.gallery.map((img, index) => (
                                     <div key={index} className="relative aspect-video rounded-none border border-black overflow-hidden group cursor-pointer bg-neutral-100">
-                                        <Image src={img} alt={`${project.title} - imagen de galería ${index + 1}`} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            <Image referrerPolicy="no-referrer" src={img} alt={`${project.title} - imagen de galería ${index + 1}`} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                                     </div>
                                 ))}
                             </div>

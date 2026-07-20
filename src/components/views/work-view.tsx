@@ -73,7 +73,6 @@ const ProjectCard = ({ project, onClick }: { project: Project; onClick: () => vo
         {/* Decoration & Branding */}
         <div className="flex items-center gap-2 mb-6 opacity-80">
            <div className="w-6 h-6 relative">
-             <NextImage src="https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/ICONO%20LOGO%20AMARILLO.png" alt="Logo" fill className="object-contain" />
            </div>
            <span className="text-[8px] font-black text-white uppercase tracking-widest">NÚCLEO COLECTIVO</span>
         </div>
@@ -92,14 +91,13 @@ const ProjectCard = ({ project, onClick }: { project: Project; onClick: () => vo
           </div>
         </div>
 
-        {/* Background Image (Subtle) */}
         <div className="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity pointer-events-none">
-           <NextImage 
-            src={project.media.hero_image} 
-            alt={title} 
-            fill 
-            className="object-cover transition-transform duration-700 group-hover:scale-110" 
-          />
+             <NextImage referrerPolicy="no-referrer"
+              src={project.media.hero_image} 
+              alt={title} 
+              fill 
+              className="object-cover transition-transform duration-700 group-hover:scale-110" 
+            />
         </div>
       </div>
 

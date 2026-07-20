@@ -201,7 +201,7 @@ export function ChallengeView() {
                 <div className="flex-grow flex items-center justify-center p-4 relative z-10 antialiased font-medium">
                     <div className="text-center max-w-4xl animate-fade-in-up">
                         <div className="flex justify-center mb-8">
-                             <Image src="https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/ICONO%20LOGO%20AMARILLO.png" alt="Logo" width={100} height={100} className="w-16 h-16 md:w-24 md:h-24" />
+                             <Image referrerPolicy="no-referrer" src="https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/ICONO%20LOGO%20AMARILLO.png" alt="Logo" width={100} height={100} className="w-16 h-16 md:w-24 md:h-24" />
                         </div>
                         <h1 className="text-4xl md:text-7xl font-black font-headline tracking-tighter mb-6 text-white uppercase">
                             {t('challenge.cover.title')}

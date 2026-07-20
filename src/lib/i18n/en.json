@@ -22,14 +22,14 @@
       "line2": "CULTURE",
       "line3": "TECHNOLOGY"
     },
-    "slide2": "WE IMAGINE <span class='text-primary'>FUTURES</span>",
-    "slide3": "<span class='text-accent'>GENERATIVE</span> DESIGN",
-    "slide4": "NUCLEO_COLLECTIVE",
-    "slide5": "SOCIAL <span class='text-primary'>TRANSFORMATION</span>",
-    "slide6": "COLLABORATIVE <span class='text-accent'>AI</span>",
-    "slide7": "LIVING_ARCHIVE",
-    "slide8": "INTERACTIVE <span class='text-primary'>ART</span>",
-    "slide9": "CONTEMPORARY CREATION"
+    "slide2": "WE IMAGINE <br/> <span class='text-primary'>FUTURES</span>",
+    "slide3": "<span class='text-accent'>GENERATIVE</span> <br/> DESIGN",
+    "slide4": "NUCLEO <br/> COLLECTIVE",
+    "slide5": "SOCIAL <br/> <span class='text-primary'>TRANSFORMATION</span>",
+    "slide6": "COLLABORATIVE <br/> <span class='text-accent'>AI</span>",
+    "slide7": "LIVING <br/> ARCHIVE",
+    "slide8": "INTERACTIVE <br/> <span class='text-primary'>ART</span>",
+    "slide9": "CONTEMPORARY <br/> CREATION"
   },
   "home_v2": {
     "hero": {
@@ -101,6 +101,12 @@
     "p11": "We invent the future from the Global South, with our own narratives and an authentic voice.",
     "p12": "WELCOME TO THE CORE.",
     "cta": "Join the Collective"
+  },
+  "projects_data": {
+    "vigilia-exp": {
+      "title": "VigiliaExp",
+      "summary": "Interactive web experience exploring the boundaries between dream, wakefulness, and artificial intelligence."
+    }
   },
   "workshops_details": {
     "ia": {

@@ -36,7 +36,7 @@ const MemberCard = ({ member, onClick }: { member: typeof ARTISTS[0], onClick: (
         <SpatialSection className="h-full">
             <div className="group flex flex-col bg-white rounded-none border-2 border-black transition-all duration-300 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] h-full overflow-hidden">
                 <div className="relative aspect-[4/5] bg-neutral-100 overflow-hidden border-b-2 border-black">
-                    <Image 
+                    <Image referrerPolicy="no-referrer" 
                         src={member.avatar} 
                         alt={name}
                         fill
