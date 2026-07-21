@@ -201,11 +201,11 @@ export function HomeView() {
                       className="relative group overflow-hidden rounded-none border-2 border-black aspect-[4/3] bg-muted cursor-pointer shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
                       onClick={() => handleProjectClick(project)}
                   >
-                          <Image referrerPolicy="no-referrer"
+                          <img
                           src={project.media.hero_image}
                           alt={t(`projects_data.${project.id}.title`)}
-                          fill
-                          className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                          
+                          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                       <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">

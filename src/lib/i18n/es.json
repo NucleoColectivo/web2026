@@ -72,6 +72,10 @@
     }
   },
   "projects_data": {
+    "bioorganism": {
+      "title": "Bioorganism",
+      "summary": "Exploración interactiva y visual sobre la vida artificial, combinando bio-arte y algoritmos generativos para crear organismos digitales."
+    },
     "vigilia-exp": {
       "title": "VigiliaExp",
       "summary": "Experiencia web interactiva que explora los límites entre el sueño, la vigilia y la inteligencia artificial."

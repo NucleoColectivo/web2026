@@ -92,11 +92,11 @@ const ProjectCard = ({ project, onClick }: { project: Project; onClick: () => vo
         </div>
 
         <div className="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity pointer-events-none">
-             <NextImage referrerPolicy="no-referrer"
+             <img
               src={project.media.hero_image} 
               alt={title} 
-              fill 
-              className="object-cover transition-transform duration-700 group-hover:scale-110" 
+               
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
             />
         </div>
       </div>

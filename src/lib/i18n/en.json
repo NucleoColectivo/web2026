@@ -103,6 +103,10 @@
     "cta": "Join the Collective"
   },
   "projects_data": {
+    "bioorganism": {
+      "title": "Bioorganism",
+      "summary": "Interactive and visual exploration of artificial life, combining bio-art and generative algorithms to create digital organisms."
+    },
     "vigilia-exp": {
       "title": "VigiliaExp",
       "summary": "Interactive web experience exploring the boundaries between dream, wakefulness, and artificial intelligence."

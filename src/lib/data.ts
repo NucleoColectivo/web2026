@@ -159,6 +159,35 @@ export const ARTISTS = [
 
 export const PROJECTS = [
   {
+    id: 'bioorganism',
+    slug: 'bioorganism',
+    year: 2026,
+    status: 'published',
+    featured: true,
+    curatorial_line: "IA Creativa & Experiencia Web",
+    authors: [
+      { id: 'manuel', name: 'Manuel Palacio', role: ['creador'] }
+    ],
+    formats: ['Aplicación Web', 'IA', 'Interactivo'],
+    tags: ['ia', 'web-app', 'experiencia', 'bioorganism'],
+    technology: {
+      software: ['React', 'Next.js', 'Three.js'],
+      hardware: [],
+      ai_models: [],
+      languages: ["Typescript", "Javascript"]
+    },
+    media: {
+      hero_image: 'https://github.com/NucleoColectivo/bioorganism/blob/main/img/bioorganism.png?raw=true',
+      gallery: [
+        'https://github.com/NucleoColectivo/bioorganism/blob/main/img/bioorganism.png?raw=true'
+      ],
+      externalUrl: 'https://bioorganism.vercel.app/'
+    },
+    exhibitions: [],
+    license: 'Propietaria',
+    collaboration: { open: false, contact: 'contacto@nucleocolectivo.com' },
+  },
+  {
     id: 'vigilia-exp',
     slug: 'vigilia-exp',
     year: 2026,
