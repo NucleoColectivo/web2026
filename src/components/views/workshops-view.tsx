@@ -55,19 +55,19 @@ const ReactorBanner = () => (
   >
     <div className="absolute top-0 left-0 bg-accent text-black px-4 py-1.5 flex items-center gap-2 z-20 border-b border-r border-black">
         <div className="w-2 h-2 rounded-full bg-black animate-pulse"></div>
-        <span className="text-[10px] font-black uppercase tracking-widest font-code tracking-[0.3em]">REACTOR SYSTEM ONLINE / ACTIVE_NODE</span>
+        <span className="text-[8px] sm:text-[10px] font-black uppercase font-code tracking-[0.1em] sm:tracking-[0.3em] whitespace-nowrap">REACTOR SYSTEM ONLINE / ACTIVE_NODE</span>
     </div>
 
-    <div className="relative z-10 w-full flex flex-col md:flex-row justify-between items-start md:items-center gap-8 pt-12">
+    <div className="relative z-10 w-full flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 md:gap-8 pt-10 md:pt-12">
         <div className="flex-1 text-left space-y-4">
-            <h2 className="text-4xl sm:text-7xl md:text-9xl font-black text-white font-headline uppercase tracking-tighter leading-[0.85] mb-2 break-words">
+            <h2 className="text-5xl sm:text-7xl lg:text-[9rem] font-black text-white font-headline uppercase tracking-tighter leading-[0.85] mb-2 break-words">
                 <span className="block transition-colors">NÚCLEO</span>
                 <span className="block text-accent transition-colors">REACTOR</span>
             </h2>
             <div className="flex items-start gap-4">
                 <div className="w-2 bg-accent min-h-[40px] flex-shrink-0" />
                 <div>
-                    <p className="font-code text-sm font-black text-accent tracking-[0.4em] uppercase mb-2">
+                    <p className="font-code text-[9px] sm:text-xs md:text-sm font-black text-accent tracking-[0.1em] sm:tracking-[0.2em] md:tracking-[0.4em] uppercase mb-2 leading-relaxed break-all sm:break-normal">
                         [ SISTEMA_DE_ACTIVACIÓN_CREATIVA_CON_IA ]
                     </p>
                     <p className="font-code text-xs md:text-sm text-neutral-400 max-w-2xl leading-relaxed uppercase">
@@ -77,14 +77,14 @@ const ReactorBanner = () => (
             </div>
             <div className="flex items-center gap-4 pt-4">
                 <div className="flex items-center gap-3 group/btn">
-                    <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.4em] font-code text-white">INGRESAR AL LABORATORIO DIGITAL</span>
+                    <span className="text-[9px] sm:text-[10px] md:text-xs font-black uppercase tracking-[0.2em] sm:tracking-[0.4em] font-code text-white text-left break-words">INGRESAR AL LABORATORIO DIGITAL</span>
                     <div className="w-10 h-10 rounded-none bg-accent text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-all border-2 border-black">
                         <ArrowRight className="size-5" />
                     </div>
                 </div>
             </div>
         </div>
-        <div className="w-24 md:w-[220px] flex-shrink-0 self-end md:self-auto text-accent opacity-60 group-hover:opacity-100 transition-opacity transform group-hover:rotate-6 duration-700">
+        <div className="w-20 sm:w-24 md:w-40 lg:w-[220px] absolute lg:relative right-4 top-12 lg:right-auto lg:top-auto flex-shrink-0 text-accent opacity-20 lg:opacity-60 group-hover:opacity-100 transition-opacity transform group-hover:rotate-6 duration-700 pointer-events-none lg:pointer-events-auto">
             <Flame className="w-full h-auto" strokeWidth={0.5} />
         </div>
     </div>

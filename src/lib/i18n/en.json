@@ -103,6 +103,14 @@
     "cta": "Join the Collective"
   },
   "projects_data": {
+    "el-semanario-hoy": {
+      "title": "El Semanario Hoy",
+      "summary": "Digital media outlet, integrating AI tools to optimize writing and interaction with readers."
+    },
+    "integricult": {
+      "title": "IntegriCult",
+      "summary": "Cultural management platform aimed at enhancing collaboration and innovation in high-impact artistic projects."
+    },
     "bioorganism": {
       "title": "Bioorganism",
       "summary": "Interactive and visual exploration of artificial life, combining bio-art and generative algorithms to create digital organisms."

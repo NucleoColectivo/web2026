@@ -159,6 +159,60 @@ export const ARTISTS = [
 
 export const PROJECTS = [
   {
+    id: 'el-semanario-hoy',
+    slug: 'el-semanario-hoy',
+    year: 2026,
+    status: 'published',
+    featured: true,
+    curatorial_line: "Comunicación & IA",
+    authors: [],
+    formats: ['Plataforma Web', 'Medio Digital'],
+    tags: ['noticias', 'web', 'periodismo'],
+    technology: {
+      software: [],
+      hardware: [],
+      ai_models: [],
+      languages: []
+    },
+    media: {
+      hero_image: 'https://api.microlink.io/?url=https://www.elsemanariohoy.com/&screenshot=true&meta=false&embed=screenshot.url',
+      gallery: [
+        'https://api.microlink.io/?url=https://www.elsemanariohoy.com/&screenshot=true&meta=false&embed=screenshot.url'
+      ],
+      externalUrl: 'https://www.elsemanariohoy.com/'
+    },
+    exhibitions: [],
+    license: 'Propietaria',
+    collaboration: { open: false, contact: 'contacto@nucleocolectivo.com' },
+  },
+  {
+    id: 'integricult',
+    slug: 'integricult',
+    year: 2026,
+    status: 'published',
+    featured: true,
+    curatorial_line: "Cultura & Innovación",
+    authors: [],
+    formats: ['Plataforma Web', 'Gestión Cultural'],
+    tags: ['cultura', 'plataforma', 'innovación'],
+    technology: {
+      software: [],
+      hardware: [],
+      ai_models: [],
+      languages: []
+    },
+    media: {
+      hero_image: 'https://api.microlink.io/?url=https://www.integricult.com/&screenshot=true&meta=false&embed=screenshot.url',
+      gallery: [
+        'https://api.microlink.io/?url=https://www.integricult.com/&screenshot=true&meta=false&embed=screenshot.url'
+      ],
+      externalUrl: 'https://www.integricult.com/'
+    },
+    exhibitions: [],
+    license: 'Propietaria',
+    collaboration: { open: false, contact: 'contacto@nucleocolectivo.com' },
+  },
+  {
     id: 'bioorganism',
     slug: 'bioorganism',
     year: 2026,

@@ -72,6 +72,14 @@
     }
   },
   "projects_data": {
+    "el-semanario-hoy": {
+      "title": "El Semanario Hoy",
+      "summary": "Medio de comunicación digital, integrando herramientas de IA para optimizar la redacción y la interacción con los lectores."
+    },
+    "integricult": {
+      "title": "IntegriCult",
+      "summary": "Plataforma de gestión cultural orientada a potenciar la colaboración y la innovación en proyectos artísticos de alto impacto."
+    },
     "bioorganism": {
       "title": "Bioorganism",
       "summary": "Exploración interactiva y visual sobre la vida artificial, combinando bio-arte y algoritmos generativos para crear organismos digitales."
