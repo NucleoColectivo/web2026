@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useApp } from '@/context/app-context';
 import { useTranslation } from '@/context/language-context';
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from 'framer-motion';
-import { ArrowRight, FlaskConical, Users, Archive, BrainCircuit, X, ChevronLeft, ChevronRight, Download, ZoomIn, ZoomOut } from 'lucide-react';
+import { ArrowRight, FlaskConical, Users, Archive, BrainCircuit, X, ChevronLeft, ChevronRight, Download, ZoomIn, ZoomOut, Zap } from 'lucide-react';
 import { SectionTitle } from '@/components/common/section-title';
 import Image from 'next/image';
 import { PROJECTS } from '@/lib/data';
@@ -51,30 +51,18 @@ function SpatialSection({ children, className }: { children: React.ReactNode, cl
 const ImgLabMarquee = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isZoomed, setIsZoomed] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
 
-  const IMG_LAB_BASE = "https://github.com/NucleoColectivo/web2026/blob/main/imglab/";
-  const images = [
-    `${IMG_LAB_BASE}01.png?raw=true`,
-    `${IMG_LAB_BASE}02.png?raw=true`,
-    `${IMG_LAB_BASE}03.png?raw=true`,
-    `${IMG_LAB_BASE}04.png?raw=true`,
-    `${IMG_LAB_BASE}05.png?raw=true`,
-    `${IMG_LAB_BASE}06.png?raw=true`,
-    `${IMG_LAB_BASE}invitacion_IG1.png?raw=true`,
-    `${IMG_LAB_BASE}invitacion_IG2.png?raw=true`,
-    `${IMG_LAB_BASE}invitacion_IG3.png?raw=true`,
-    `${IMG_LAB_BASE}invitacion_IG4%20copia.png?raw=true`,
-    `${IMG_LAB_BASE}invitacion_IG4.png?raw=true`,
-    `${IMG_LAB_BASE}invitacion_afiche1.png?raw=true`,
-  ];
+  const IMG_LAB_BASE = "https://raw.githubusercontent.com/NucleoColectivo/web2026/main/imglab/";
+  const images = Array.from({ length: 15 }).map((_, i) => `${IMG_LAB_BASE}${i.toString().padStart(2, '0')}.png`);
 
   useEffect(() => {
+    if (isHovering || selectedImage) return;
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % images.length);
-    }, 6000);
+    }, 5000);
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [images.length, isHovering, selectedImage]);
 
   const handleNext = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -86,166 +74,155 @@ const ImgLabMarquee = () => {
     setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
-  const handleDownload = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (!selectedImage) return;
-    
-    // Create an invisible link to download the image
-    const link = document.createElement('a');
-    link.href = selectedImage;
-    link.download = `nucleo_colectivo_lab_${currentImageIndex}.png`;
-    link.target = "_blank";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // WhatsApp Setup with custom message
+  const phone = "573332781752";
+  const message = "Hola, estoy interesado/a en el Laboratorio IA para procesos creativos.";
+  const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+  // Handle Escape key
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setSelectedImage(null);
+    };
+    if (selectedImage) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedImage]);
 
   return (
-    <>
-      <div className="w-full bg-background border-y-2 border-border flex flex-col lg:flex-row relative z-30 overflow-hidden my-16 md:my-32">
+    <div className="w-full my-16 md:my-32 flex flex-col items-center justify-center p-4">
+      <div className="w-full max-w-5xl mx-auto bg-black border-4 border-[#ffcc00] rounded-2xl shadow-2xl overflow-hidden relative">
         
-        {/* Left Info Panel */}
-        <div className="w-full lg:w-[50%] bg-[#FFCC00] p-6 md:p-10 lg:p-16 flex flex-col justify-center border-b-2 lg:border-b-0 lg:border-r-2 border-border flex-shrink-0 relative">
-          <h2 className="font-headline font-black text-black text-4xl md:text-5xl lg:text-6xl leading-[0.9] uppercase mb-8 lg:mb-10 tracking-tighter  origin-bottom-left">
-            Laboratorio IA<br/>para procesos<br/>creativos
-          </h2>
-          
-          <div className="flex flex-col sm:flex-row gap-4 items-stretch max-w-xl">
-            {/* Date Box */}
-            <div className="bg-white border-2 border-black p-3 md:p-5 flex flex-col items-center justify-center text-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex-shrink-0 min-w-[150px]">
-              <span className="font-headline font-black text-sm md:text-base uppercase tracking-tighter text-black ">Sábado</span>
-              <span className="font-headline font-black text-6xl md:text-7xl leading-[0.8] my-1 tracking-tighter text-black ">15</span>
-              <span className="font-headline font-black text-sm md:text-base uppercase tracking-tighter text-black ">Agosto</span>
-              <span className="text-sm md:text-base font-light text-gray-500 tracking-widest mt-1">2026</span>
-            </div>
-
-            {/* Info Box */}
-            <div className="bg-white border-2 border-black flex flex-col flex-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden">
-              {/* Time */}
-              <div className="bg-black text-white p-2 text-center flex items-center justify-center h-14 md:h-16">
-                <span className="font-black text-2xl md:text-3xl font-headline tracking-tighter whitespace-nowrap ">2:00 <span className="text-sm md:text-base font-sans tracking-normal transform-none inline-block">p. m.</span> a 6:00 <span className="text-sm md:text-base font-sans tracking-normal transform-none inline-block">p. m.</span></span>
-              </div>
-              
-              {/* Location */}
-              <div className="flex flex-col flex-1 p-4 pb-2 justify-end bg-white">
-                <span className="text-xs md:text-sm font-black tracking-widest uppercase ml-1 mb-1 text-black/80">LUGAR :</span>
-                <span className="font-headline font-black text-2xl md:text-4xl leading-[0.9] ml-1 mb-1 tracking-tighter text-black  origin-bottom-left">Centro Cultural</span>
-              </div>
-              
-              <div className="bg-[#FFCC00] px-4 py-2 border-y-2 border-black font-black font-headline text-lg md:text-2xl tracking-tighter text-black  origin-left">
-                Facultad de Artes UdeA
-              </div>
-              
-              <div className="bg-white px-4 py-3 flex items-center gap-2 font-black text-base md:text-xl border-b-2 border-black text-black">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-[#FFCC00] fill-current drop-shadow-[1px_1px_0_rgba(0,0,0,1)] flex-shrink-0" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <span className="whitespace-nowrap font-headline tracking-tighter ">CRA 64B # 51- 64</span>
-              </div>
-              
-              <div className="flex font-black font-headline text-[10px] md:text-sm h-10 md:h-12">
-                <div className="bg-[#e5e5e5] px-3 md:px-4 flex items-center justify-center border-r-2 border-black text-gray-500 tracking-widest">BARRIO</div>
-                <div className="bg-[#FFCC00] flex-1 px-3 md:px-4 flex items-center justify-center tracking-tighter text-center whitespace-nowrap text-black text-base md:text-lg  origin-center">CARLOS E RESTREPO</div>
-              </div>
-            </div>
-          </div>
-          
-          {/* WhatsApp Button */}
-          <div className="mt-8 md:mt-12 max-w-xl">
-             <a href="https://wa.me/573332781752?text=Hola,%20estoy%20interesado/a%20en%20el%20Laboratorio%20IA%20para%20procesos%20creativos." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-black text-white px-6 py-3 font-headline font-black text-sm md:text-base uppercase tracking-tighter border-2 border-black rounded-none hover:bg-white hover:text-black transition-all w-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                </svg>
-                ME INTERESA
-             </a>
-             <p className="mt-3 text-sm font-black font-headline text-black/70 text-center tracking-tight">O escríbenos al teléfono: (+57) 333 278 1752</p>
-          </div>
+        {/* Top branding banner bar */}
+        <div className="bg-[#ffcc00] text-black px-6 py-3 font-black text-center sm:text-left flex flex-col sm:flex-row justify-between items-center">
+            <span className="tracking-wider uppercase text-lg flex items-center gap-2">
+                <Zap className="w-5 h-5 text-black" fill="currentColor" /> NÚCLEO COLECTIVO — HOME BANNER
+            </span>
+            <span className="text-xs font-semibold bg-black text-[#ffcc00] px-3 py-1 rounded-full uppercase mt-2 sm:mt-0">
+                Laboratorio IA 2026
+            </span>
         </div>
 
-        {/* Right Slideshow Panel */}
-        <div className="flex-1 lg:w-[50%] py-8 sm:py-10 flex items-center justify-center overflow-hidden bg-background relative group">
-          <div 
-            className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] flex-shrink-0 cursor-pointer overflow-hidden px-4 md:px-10"
-            onClick={() => setSelectedImage(images[currentImageIndex])}
-          >
-            <AnimatePresence>
-              <motion.img
-                key={currentImageIndex}
-                src={images[currentImageIndex]}
-                alt={`Lab Image ${currentImageIndex}`}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1.2 }}
-                className="absolute inset-0 w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.02]"
-              />
-            </AnimatePresence>
-          </div>
-          
-          <button 
-            className="absolute left-2 sm:left-6 p-2 rounded-full bg-black/50 hover:bg-black text-white transition-all opacity-0 group-hover:opacity-100 z-40"
-            onClick={handlePrev}
-          >
-            <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8" />
-          </button>
-          <button 
-            className="absolute right-2 sm:right-6 p-2 rounded-full bg-black/50 hover:bg-black text-white transition-all opacity-0 group-hover:opacity-100 z-40"
-            onClick={handleNext}
-          >
-            <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
-          </button>
+        {/* Banner Slider Container */}
+        <div 
+          className="relative w-full aspect-[16/9] sm:aspect-[21/9] bg-zinc-950 overflow-hidden group cursor-pointer"
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+        >
+            <div className="w-full h-full relative">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentImageIndex}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 1, ease: "easeInOut" }}
+                  className="absolute inset-0 flex items-center justify-center"
+                >
+                  <img 
+                    src={images[currentImageIndex]} 
+                    alt={`Laboratorio IA ${currentImageIndex}`} 
+                    className="w-full h-full object-contain bg-black cursor-pointer" 
+                    onClick={() => setSelectedImage(images[currentImageIndex])} 
+                    loading="lazy"
+                  />
+                </motion.div>
+              </AnimatePresence>
+            </div>
+
+            {/* Navigation Arrows */}
+            <button 
+              onClick={handlePrev} 
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/80 hover:bg-[#ffcc00] hover:text-black text-white w-12 h-12 rounded-full flex items-center justify-center transition-all z-20 opacity-90 shadow-lg border border-[#ffcc00]/40"
+            >
+                <ChevronLeft className="w-6 h-6" />
+            </button>
+            <button 
+              onClick={handleNext} 
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/80 hover:bg-[#ffcc00] hover:text-black text-white w-12 h-12 rounded-full flex items-center justify-center transition-all z-20 opacity-90 shadow-lg border border-[#ffcc00]/40"
+            >
+                <ChevronRight className="w-6 h-6" />
+            </button>
+
+            {/* Click indicator badge */}
+            <div className="absolute top-4 right-4 bg-black/80 text-[#ffcc00] px-3 py-1.5 rounded-lg text-xs font-bold tracking-wider z-20 flex items-center gap-2 border border-[#ffcc00]/30 shadow pointer-events-none">
+                <ZoomIn className="w-4 h-4" /> Click para ampliar
+            </div>
+        </div>
+
+        {/* Footer Navigation bar */}
+        <div className="bg-zinc-950 px-6 py-3 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-zinc-900">
+            <div className="text-xs text-zinc-400 font-medium">
+                Pieza <span className="text-[#ffcc00] font-bold">{currentImageIndex + 1}</span> de <span>{images.length}</span>
+            </div>
+            {/* Dots Navigation Bar */}
+            <div className="flex flex-wrap items-center justify-center gap-2 max-w-full">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImageIndex(index)}
+                  className={`h-2.5 rounded-full transition-all flex-shrink-0 ${index === currentImageIndex ? 'bg-[#ffcc00] w-6' : 'bg-zinc-700 hover:bg-zinc-400 w-2.5'}`}
+                />
+              ))}
+            </div>
+            <div className="text-xs text-zinc-500">
+                Desvanecimiento automático
+            </div>
+        </div>
+
+        {/* Call To Action Panel */}
+        <div className="bg-zinc-900 p-6 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-zinc-800">
+            <div className="text-center sm:text-left">
+                <h3 className="text-xl font-extrabold text-[#ffcc00]">Laboratorio IA para procesos creativos</h3>
+                <p className="text-zinc-400 text-sm mt-1">Sábado 15 de Agosto 2026 • Centro Cultural Facultad de Artes UdeA</p>
+            </div>
+            <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-[#ffcc00] hover:bg-yellow-400 text-black font-black px-6 py-3.5 rounded-xl flex items-center justify-center gap-3 transition-transform hover:scale-105 shadow-lg uppercase tracking-wide text-sm">
+                    <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    Me Interesa / Inscribirme
+                </a>
+            </div>
         </div>
       </div>
 
+      {/* Modal */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className={`fixed inset-0 z-[100] flex bg-black/90 backdrop-blur-md ${isZoomed ? 'overflow-auto items-start justify-center' : 'overflow-hidden items-center justify-center'}`}
-            onClick={() => { setSelectedImage(null); setIsZoomed(false); }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-md p-4"
+            onClick={() => setSelectedImage(null)}
           >
-            <div className="fixed top-4 right-4 sm:top-6 sm:right-6 flex flex-col gap-3 z-[110]">
-              <button 
-                className="text-white hover:text-accent transition-colors bg-white/10 hover:bg-white/20 rounded-full p-2 backdrop-blur-sm"
-                onClick={(e) => { e.stopPropagation(); setSelectedImage(null); setIsZoomed(false); }}
-              >
-                <X className="size-6 md:size-8" />
-              </button>
-              
-              <button 
-                className="text-white hover:text-accent transition-colors bg-white/10 hover:bg-white/20 rounded-full p-2 backdrop-blur-sm"
-                onClick={(e) => { e.stopPropagation(); setIsZoomed(!isZoomed); }}
-              >
-                {isZoomed ? <ZoomOut className="size-6 md:size-8" /> : <ZoomIn className="size-6 md:size-8" />}
-              </button>
-              
-              <button 
-                className="text-white hover:text-accent transition-colors bg-white/10 hover:bg-white/20 rounded-full p-2 backdrop-blur-sm"
-                onClick={handleDownload}
-              >
-                <Download className="size-6 md:size-8" />
-              </button>
-            </div>
-
-            <motion.div
-              layout
-              className={`relative z-[105] flex justify-center w-full ${isZoomed ? 'min-h-full py-12 px-4' : 'h-full p-4 md:p-12 items-center'}`}
+            <button 
+              className="absolute top-6 right-6 text-white hover:text-[#ffcc00] z-50 bg-zinc-900/80 w-12 h-12 rounded-full flex items-center justify-center transition-colors"
+              onClick={(e) => { e.stopPropagation(); setSelectedImage(null); }}
             >
-              <motion.img 
-                initial={{ scale: 0.95, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.95, opacity: 0 }}
-                transition={{ type: "spring", damping: 25, stiffness: 300 }}
-                src={selectedImage} 
-                alt="Expanded view" 
-                className={isZoomed ? "w-full max-w-7xl h-auto object-contain cursor-zoom-out shadow-2xl" : "w-full h-full object-contain cursor-zoom-in drop-shadow-2xl"}
-                onClick={(e) => { e.stopPropagation(); setIsZoomed(!isZoomed); }}
-              />
-            </motion.div>
+              <X className="w-8 h-8" />
+            </button>
+            <div className="relative max-w-5xl max-h-[90vh] flex items-center justify-center">
+                <motion.img 
+                  initial={{ scale: 0.95, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.95, opacity: 0 }}
+                  transition={{ type: "spring", damping: 25, stiffness: 300 }}
+                  src={selectedImage} 
+                  alt="Ampliada" 
+                  className="max-w-full max-h-[85vh] object-contain rounded-lg border-2 border-[#ffcc00] shadow-2xl"
+                  onClick={(e) => e.stopPropagation()}
+                />
+            </div>
+            <div className="absolute bottom-6 text-center text-zinc-400 text-sm">
+                Presiona <span className="text-[#ffcc00] font-bold">ESC</span> o haz clic en la "X" para cerrar
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 };
 
